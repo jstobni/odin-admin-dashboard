@@ -34,10 +34,6 @@ body {
     flex: 2;
 }
 
-.sidebar-menu1 li:hover {
-    background-color: #CFCFC5;
-}
-
 .sidebar-menu2 {
     flex: none;
 }
@@ -76,7 +72,14 @@ ul li {
     height: 30px;
     border: 0;
     background-color: #CFCFC5;
+    color: #8C8C8C;
     border-radius: 15px;
+    padding: 0 10px;
+}
+
+.search-input:hover {
+    border: 1px solid #8C8C8C;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
 }
 
 .account {
@@ -128,7 +131,7 @@ ul li {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 5fr;
+    grid-template-rows: 1fr 4fr;
     gap: 15px
 }
 
@@ -138,10 +141,28 @@ ul li {
 
 .data-filter {
     grid-column: 4 / 5;
+    align-content: center;
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+select::picker-icon {
+    color: aqua;
+    transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+    rotate: 180deg;
 }
 
 .data {
     grid-column: 1 / 5;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -150,6 +171,26 @@ ul li {
 
 .data-container {
     height: 200px;
-    background-color: white;
+    background-color: #BEA042;
+    color: #ffffff;
+    border-radius: 25px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.data-result {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.data-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.data-change {
+    font-size: 12px;
+    font-style: italic;
 }
 
