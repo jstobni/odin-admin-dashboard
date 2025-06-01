@@ -69,11 +69,11 @@ ul li {
 
 .search-input {
     width: 75%;
-    height: 30px;
+    height: 50px;
     border: 0;
     background-color: #CFCFC5;
     color: #8C8C8C;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 10px;
 }
 
@@ -94,9 +94,10 @@ ul li {
 }
 
 .picture {
-    height: 32px;
-    width: 32px;
-    border-radius: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #CFCFC5;
     border: 1px solid black;
 }
 
@@ -121,8 +122,17 @@ ul li {
     border: 1px solid #696969;
     background-color: #8C8C8C;
     height: 50px;
+    font-size: 14px;
+    font-style: 500;
     color: white;
     border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.welcome-buttons button:hover {
+    border: 1px solid #8C8C8C;
+    color: black;
+    background-color: #CFCFC5;
 }
 
 .content {
